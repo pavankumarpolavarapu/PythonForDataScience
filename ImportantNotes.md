@@ -1,11 +1,11 @@
 # Important Notes
-## Note: May contain inaccuracies
+##### Note: May contain inaccuracies
 
-# Built-in Functions
+# 1. Built-in Functions
     1. Enumerate
     Return an enumerate object. iterable must be a sequence, an iterator, or some other object which supports iteration. The __next__() method of the iterator returned by enumerate() returns a tuple containing a count (from start which defaults to 0) and the values obtained from iterating over iterable.
-# Strings
-## String Methods
+# 2. Strings
+#### 2.1 String Methods
     1. Capitalize
         Capitalizes the first character
     2. Upper
@@ -15,10 +15,10 @@
     4. Index ("StringToBeIndexed")
         Returns the index position of the input string variable
 
-# Lists
+# 3. Lists
     1. When you add two lists, lists will be concatenated unlike Numpy Array
 
-## List Methods
+#### 3.1 List Methods
     1. Index("ListItemToBeIndexed")
         Returns the position of the index for the variable passed to Index
     2. Count("ListItemToBeCounted")
@@ -29,16 +29,16 @@
             Append method adds the list/string at end of the list
 
 
-# NumPy
+# 4. NumPy
 
 NumPy = Numeric Python
 NDArray = N Dimensional Array
 
-## NumPy Array Methods
+#### 4.1 NumPy Array Methods
     1. Shape 
         Returns the row and column dimensions of the array
 
-## Numpy Functions  
+#### 4.2 Numpy Functions  
     1. Mean (1DArray)
         Returns the mean of the array
     2. Median (1DArray)
@@ -66,9 +66,9 @@ NDArray = N Dimensional Array
         Generates a random number between low and high
 
 
-# MatplotLib
+# 5. MatplotLib
 
-## Matplotlib Functions
+#### 5.1 Matplotlib Functions
 
     1. Pyplot.Plot (1DArray[x], 1DArray[y])
         Line Plot
@@ -88,24 +88,24 @@ NDArray = N Dimensional Array
     9. Pyplot.text (x, y, String)
         prints string at x, y position
 
-# Dictionaries & Pandas
+# 6. Dictionaries & Pandas
 
     1. Dictionary Keys have to be immutable objects
     2. Pandas could be good for holding tabular data and can have different data types 
     3. Selecting dataframe by column returns the series, if you want dataframe select using double opening brackets
 
-## Methods
+#### 6.1 Methods
     1. LOC[1DArray=row, 1DArray=column] (label based), ILOC[1DArray=row, 1DArray=column] (integer location based)
         Returns the data for the described positions
     2. iterrows
         Returns an iterable object so as to loop over DataFrame rows, else loops over column names
     3. Apply
         Applies a function on individual values of Pandas Series 
-## Functions
+#### 6.2 Functions
     1. Pandas.read_csv(file=name, index_col=columntobeindex )
 
 
-## Attributes
+#### 6.3 Attributes
     1. Pandas.Dataframe.index = Array
         Sets the index of a dataframe
 
