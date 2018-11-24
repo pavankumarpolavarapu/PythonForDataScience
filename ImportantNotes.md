@@ -1,33 +1,98 @@
 # Important Notes
-##### Note: May contain inaccuracies
+##### Note: Personal notes, may contain errors.
 
 # 1. Built-in Functions
-    1. Enumerate
-    Return an enumerate object. iterable must be a sequence, an iterator, or some other object which supports iteration. The __next__() method of the iterator returned by enumerate() returns a tuple containing a count (from start which defaults to 0) and the values obtained from iterating over iterable.
+| Method     | Description                 | Returns | Additional Notes                                                                                                                                                                                                                                                                 |
+|------------|-----------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ennumerate | Return an enumerate object. | Y       | iterable must be a sequence, an iterator, or some other object which supports iteration. The __next__() method of the iterator returned by enumerate() returns a tuple containing a count (from start which defaults to 0) and the values obtained from iterating over iterable. |
 # 2. Strings
 #### 2.1 String Methods
-    1. Capitalize
-        Capitalizes the first character
-    2. Upper
-        Turns all the characters to upper case
-    3. Replace ("TextToBeReplaced", "ReplacedText")
-        Takes two parameters and replaces their occurences
-    4. Index ("StringToBeIndexed")
-        Returns the index position of the input string variable
+| Method                                    | Description                                                                                                          | Returns | Additional Notes                                                                                            |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------|
+| capitalize()                              | Returns copy of word with first character capitalized                                                                | Y       |                                                                                                             |
+| center(width[, fillchar])                 | Returns a center string in specified width padded with specified character                                           | Y       |                                                                                                             |
+| casefold()                                | Returns a copy of casefolded string                                                                                  | Y       |                                                                                                             |
+| count(sub[, start[, end]])                | Returns occurrences of substring in string                                                                           | Y       |                                                                                                             |
+| endswith(suffix[, start[, end]])          | Returns boolean output if string ends with the specified suffix                                                      | Y       |                                                                                                             |
+| expandtabs(tabsize=8)                     | Return a copy of the string where all tab characters are replaced by one or more spaces                              | Y       |                                                                                                             |
+| encode(encoding="utf-8", errors="strict") | Return an encoded version of the string as a bytes object.                                                           | Y       |                                                                                                             |
+| find(sub[, start[, end]])                 | Returns the index of first occurrence of substring within the slice                                                  | Y       |                                                                                                             |
+| format(*args, **kwargs)                   | Perform a string formatting operation                                                                                | Y       |                                                                                                             |
+| index(sub[, start[, end]])                | Returns Index of Substring                                                                                           | Y       | ValueError when substring not found                                                                         |
+| isalnum()                                 | Returns boolean result by checking for Alphanumeric characters                                                       | Y       |                                                                                                             |
+| isalpha()                                 | Return true if all characters in the string are alphabetic                                                           | Y       |                                                                                                             |
+| isdecimal()                               | Return true if all characters in the string are decimal                                                              | Y       |                                                                                                             |
+| isdigit()                                 | Return true if all characters in the string are digits ( decimals + digits )                                         | Y       |                                                                                                             |
+| isidentifier()                            | Returns true if valid Identifier                                                                                     | Y       |                                                                                                             |
+| islower()                                 | Returns true if all characters in string are lower case                                                              | Y       |                                                                                                             |
+| isnumeric()                               | Return true if all the characters in string are numeric                                                              | Y       |                                                                                                             |
+| isprintable()                             | Returns true if all characters are printable                                                                         | Y       |                                                                                                             |
+| isspace()                                 | Returns true if all characters are whitespace                                                                        | Y       |                                                                                                             |
+| istitle()                                 | Returns true if words are title cased, meaning first character capitalized                                           | Y       |                                                                                                             |
+| isupper()                                 | Returns true if all characters are uppercase characters                                                              | Y       |                                                                                                             |
+| join()                                    | Returns a concatenated string                                                                                        | Y       |                                                                                                             |
+| ljust()                                   | Returns left-justified string of given width                                                                         | Y       |                                                                                                             |
+| rjust()                                   | Returns right-justified string of given width                                                                        | Y       |                                                                                                             |
+| lower()                                   | Returns lowercased string                                                                                            | Y       |                                                                                                             |
+| upper()                                   | Returns uppercased string                                                                                            | Y       |                                                                                                             |
+| swapcase()                                | Returns a copy of string swapping uppercase characters to lowercase and vice versa                                   | Y       |                                                                                                             |
+| lstrip([chars])                           | Return a copy of the string with leading characters removed.                                                         | Y       |                                                                                                             |
+| rstrip([chars])                           | Return a copy of the string with trailing characters removed.                                                        | Y       |                                                                                                             |
+| strip([chars])                            | Return a copy of the string with leading and trailing characters removed.                                            | Y       |                                                                                                             |
+| partition(sep)                            | Returns a 3-tuple contaitning part before separator, separator and part after separator                              | Y       |                                                                                                             |
+| maketrans(x[, y[, z]])                    | Returns a translation table, X = dictionary, X,Y = string                                                            | Y       |                                                                                                             |
+| rpartition(sep)                           | Returns a 3-tuple contaitning part before separator, separator and part after separator                              | Y       | If the separator is not found returns a 3-tuple containing two empty strings, followed by the string itself |
+| translate(table)                          | Return a copy of the string in which each character has been mapped through the given translation table.             | Y       | LookupError exception if not found in translationt table                                                    |
+| replace(old, new[, count])                | Return a copy of the string with all occurrences of substring old replaced by new for count of occurrences specified | Y       |                                                                                                             |
+| rfind(sub[, start[, end]])                | Returns the highest Index of substring within specified range                                                        | Y       |                                                                                                             |
+| rindex(sub[, start[, end]])               | Returns highest Index of substring like rfind but raises ValueError if not found                                     | Y       | ValueError when substring not found                                                                         |
+| split(sep=None, maxsplit=-1)              | Returns a list of strings split from left at separator                                                               | Y       |                                                                                                             |
+| rsplit(sep=None, maxsplit=-1)             | Return a list of the words in the string, using sep as the delimiter string.                                         | Y       |                                                                                                             |
+| splitlines([keepends])                    | Return a list of the lines in the string, breaking at line boundaries.                                               | Y       | Line breaks are not included in the resulting list unless keepends is given and true.                       |
+| startswith(prefix[, start[, end]])        | Return True if string starts with the prefix                                                                         | Y       |                                                                                                             |
+| title()                                   | Returns a title cased string                                                                                         | Y       |                                                                                                             |
+| zfill(width)                              | Returns a copy of the string padded with zeros for specified width                                                   | Y       |                                                                                                             |
+| format_map(mapping)                       | Formats the string using dictionary                                                                                  | Y       |                                                                                                             |
+
 
 # 3. Lists
     1. When you add two lists, lists will be concatenated unlike Numpy Array
 
 #### 3.1 List Methods
-    1. Index("ListItemToBeIndexed")
-        Returns the position of the index for the variable passed to Index
-    2. Count("ListItemToBeCounted")
-        Takes a variable as input and counts the number of times it is repeated in the list
+| Method                        | Description                                           | Returns | Common Error                                                | 
+|-------------------------------|-------------------------------------------------------|---------|-------------------------------------------------------------|
+| append(List/String)           | Add Single Element to The List                        | N       | does not return the new list, just modifies the original.   |
+| clear()                       | Removes all Items from the List                       | N       |                                                             |
+| copy()                        | Returns Shallow Copy of a List                        | Y       |                                                             |
+| count(x)                      | returns number of times element occurred in the list  | Y       | ValueError when element not found                           |
+| extend(list2)                 | Add Elements of a List2 to the first List             | N       |                                                             |
+| index(x[, start[, end]])      | returns smallest zero based index of element in list  | Y       | ValueError when element not found                           |
+| insert(index, elem)           | Inserts Element to The List at given index            | N       |                                                             |
+| pop([i])                      | Removes given item at index else removes last item    | N       |                                                             |
+| remove(x)                     | Removes the element x from the List                   | N       | ValueError when element not found                           |
+| reverse()                     | Reverses a List                                       | N       |                                                             |
+| sort()                        | Sorts elements of a list                              | N       |                                                             |
 
-    Methods that doesn't return
-        1. Append (List/String)
-            Append method adds the list/string at end of the list
-
+#### 3.2 Python Methods for List
+| Method          | Description                                        | Returns | Common Error             | 
+|-----------------|----------------------------------------------------|---------|--------------------------|
+| any()           | Checks if any element of an iterable is True       |         |                          |
+| all()           | Returns true when all elements in iterable is true |         |                          |
+| ascii()         | Returns string containing printable representation |         |                          |
+| bool()          | Converts a Value to Boolean                        |         |                          |
+| enumerate()     | Returns an Enumerate object                        |         |                          |
+| filter()        | Constructs iterator from elements which are true   |         |                          |
+| iter()          | Returns iterator for an object                     |         |                          |
+| list()		  | Creates list in Python                             |         |                          |
+| len()           | Returns length of an Object                        |         |                          |
+| max()           | Returns largest element                            |         |                          |
+| min()           | Returns smallest element                           |         |                          |
+| map()           | Applies function and returns a list                |         |                          |
+| reversed()      | Returns reversed iterator of a sequence            |         |                          |
+| slice()         | Creates a slice object specified by range()        |         |                          |
+| sorted()        | Returns sorted list from a given iterable          |         |                          |
+| sum()           | Add items of an iterable                           |         |                          |
+| zip()           | Returns an iterator of tuples                      |         |                          |
 
 # 4. NumPy
 
@@ -109,3 +174,14 @@ NDArray = N Dimensional Array
     1. Pandas.Dataframe.index = Array
         Sets the index of a dataframe
 
+# 7. SQLAlchemy
+
+#### 7.1 Engine Methods
+    1. table_names()
+        Returns the table names in the database
+
+
+#### 7.2 Table Methods
+    1. Table(table_name, metadata, autoload=bool, autoload_with=engine)
+        Requires table name and metadata
+        
